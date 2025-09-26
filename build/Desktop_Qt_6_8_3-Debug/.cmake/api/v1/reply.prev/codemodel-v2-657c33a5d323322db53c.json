@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2bed09628bff534e6951.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pathfinding_robot_simulator",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pathfinding_robot_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pathfinding_robot_simulator-Debug-f4aaf2d22e950a0ca716.json",
+					"name" : "pathfinding_robot_simulator",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug",
+		"source" : "/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

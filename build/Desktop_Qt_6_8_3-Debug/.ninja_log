@@ -1,0 +1,8 @@
+# ninja log v6
+2	73	1758878515424157696	build.ninja	393dbd32036ddad4
+0	936	1758878345298336138	CMakeFiles/pathfinding_robot_simulator.dir/main.cpp.o	3f0ac307047b6d7d
+4	506	1758878747162481234	CMakeFiles/pathfinding_robot_simulator.dir/class_implements/point.cpp.o	17258a74866d52e3
+5	572	1758878815172163137	CMakeFiles/pathfinding_robot_simulator.dir/class_implements/robot.cpp.o	cf1158e43b9fd592
+8	844	1758878815176163178	CMakeFiles/pathfinding_robot_simulator.dir/class_implements/world.cpp.o	802b81f989b6c202
+4	825	1758878848996502279	CMakeFiles/pathfinding_robot_simulator.dir/main.cpp.o	3f0ac307047b6d7d
+825	971	1758878849818510521	pathfinding_robot_simulator	25ae23582829edea
