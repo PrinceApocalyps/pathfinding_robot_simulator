@@ -1,7 +1,0 @@
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/pathfinding_robot_simulator.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/edit_cache.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/rebuild_cache.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/list_install_components.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install/local.dir
-/home/apocalyps/cpp_mega_repo/research_repo/robotics_sub_repo/pathfinding_robot_simulator/build/Desktop_Qt_6_8_3-Debug/CMakeFiles/install/strip.dir
