@@ -1,50 +1,5 @@
-# Qt Creator user-specific files
+#ignore the cmake files
+CMakeLists.txt
 *.user
-*.autosave
-
-# CMake build directories
-build-*/
-[Cc]MakeCache.txt
-[Cc]MakeFiles/
-cmake_install.cmake
-CTestTestfile.cmake
-compile_commands.json
-*_autogen/
-
-# Qt Creator project files
-*.creator
-*.creator.user
-*.creator.user.*
-*.creator.options
-*.creator.shared
-
-# Compiled object and binary files
-*.o
-*.obj
-*.so
-*.so.*
-*.a
-*.lib
-*.dll
-*.dylib
-*.exe
-
-# Debugging and profiling
-*.gcno
-*.gcda
-*.gcov
-*.gprof
-*.pdb
-
-# Logs and temp
-*.log
-*.tmp
-
-# Swap/backup files
-*~
-*.swp
-*.swo
-*.bak
-
-# macOS junk
-.DS_Store
+#ignore the build directory
+build/
