@@ -14,7 +14,7 @@ void robot::init(){
 // Prints robot's current location and orientation
 void robot::print(){
     std::cout << "location: " << location.getX() << "," << location.getY()
-              << "  Orientation: ";
+    << "  Orientation: ";
     switch (orientation){
     case North:
         std::cout << "North\n";
@@ -45,6 +45,26 @@ void robot::setOrientation(orientation_type orientation){
     this->orientation = orientation;
 }
 
+//movement
+bool robot::moveToward(point target){
+
+    if(getCol()<target.getY()){
+        setOrientation(East);
+        forward();
+    }else if(getCol()>target.getY()){
+        setOrientation(West);
+        forward();
+    }else if(getRow()<target.getX()){
+        setOrientation(South);
+        forward();
+    }else if(getRow()>target.getX()){
+        setOrientation(North);
+        forward();
+    }else{
+        return false;
+    }
+    return true;
+}
 
 // Move forward one step (if not at edge)
 bool robot::forward(){

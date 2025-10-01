@@ -1,12 +1,14 @@
 #ifndef WORLD_H
 #define WORLD_H
 #include <vector>
-#include "point.h"
+#include "../class_headers/point.h"
+#include "../class_headers/robot.h"
 
 class world
 {
 private:
     int Size;
+    robot cooper;
     std::vector<std::vector<point>> world_cell;
     std::vector<point> Coins;
 
@@ -20,9 +22,14 @@ public:
     int getSize();
     int getNumCoins();
 
+    void greedyRSim(int totalCoins);
 
     //helper functions
-    void displayWorld(int,int,int);
+    bool isCoin(int row, int col);
+    bool pickupCoin(int row, int col);
+    point nearestCoin();
+    int abs(int x);
+    void displayWorld(int);
     void print() const;
 };
 

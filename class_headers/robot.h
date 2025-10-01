@@ -1,7 +1,7 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "point.h"      // project header
+#include "../class_headers/point.h"      // project header
 #include <iostream>     // standard library header
 
 class robot
@@ -29,6 +29,9 @@ public:
 
     // Set orientation
     void setOrientation(orientation_type orientation);
+
+    //movement toward the nearest
+    bool moveToward(point target);
 
     // Move forward one step (if not at edge)
     bool forward();
