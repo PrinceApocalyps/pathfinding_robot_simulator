@@ -70,7 +70,7 @@ int main(int argc, char* argv[]) {
 
             grassland.set(i,num[2*i],num[(2*i)+1] );
         }
-        grassland.print();
+        grassland.printCoinXY();
 
     }
 
@@ -79,11 +79,21 @@ int main(int argc, char* argv[]) {
 
 
     int total = grassland.getNumCoins();
-    while(grassland.getNumCoins()>0){
+    int moves = 0;
+    grassland.pathfinder();
+    //grassland.printTrip();
 
+    while(grassland.getNumCoins()>0){
+        moves++;
         std::cout << "\033[2J\033[1;1H";//clear screen
         std::cout << "Total number of coins: " << total << std::endl;
-        grassland.greedyRSim(total);
+        grassland.printTrip();
+        grassland.simulatePathFinder(total);
+
+        std::cout<< "Number of Moves: " << moves << std::endl;
+        //grassland.printCoinXY();
+
+        //grassland.greedyRSim(total);
 
     }
 

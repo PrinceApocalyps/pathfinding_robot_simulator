@@ -11,6 +11,7 @@ private:
     robot cooper;
     std::vector<std::vector<point>> world_cell;
     std::vector<point> Coins;
+    std::vector<point> Trip;
 
 public:
     world();
@@ -24,13 +25,17 @@ public:
 
     void greedyRSim(int totalCoins);
 
+    void pathfinder();
+    void simulatePathFinder(int totalCoins);
+
     //helper functions
     bool isCoin(int row, int col);
     bool pickupCoin(int row, int col);
     point nearestCoin();
     int abs(int x);
     void displayWorld(int);
-    void print() const;
+    void printCoinXY() const;
+    void printTrip();
 };
 
 #endif // WORLD_H

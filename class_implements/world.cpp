@@ -1,9 +1,11 @@
 #include "../class_headers/robot.h"
 #include "../class_headers/point.h"
 #include "../class_headers/world.h"
+#include "./simanneling.h"
 #include <chrono>
 #include <thread>
 #include <vector>
+#include <algorithm>
 #include <iostream>
 
 world::world(){
@@ -41,6 +43,22 @@ void world::greedyRSim(int totalCoins){
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
 }
 
+void world::pathfinder(){
+    SimAnneling pathFinder;
+    point start;
+
+    start.set(0,0);
+    pathFinder.optimize(Coins,start);
+    Coins = pathFinder.getBestTrip();
+
+    std::reverse(Coins.begin(), Coins.end());
+}
+
+void world::simulatePathFinder(int totalCoins){
+    cooper.moveToward(Coins.back());
+    displayWorld(totalCoins);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+}
 //*******************helper functions
 
 //check for coin
@@ -128,9 +146,16 @@ void world::displayWorld(int num_coins){
 }
 
 
-void world::print() const{
+void world::printCoinXY() const{
     for(int i = 0; i<Coins.size();i++){
         std::cout<<"Coin no. " << i+1;
         Coins[i].print();
+    }
+}
+
+void world::printTrip(){
+    for(int i = 0; i<Trip.size();i++){
+        std::cout<<"Coin no. " << i+1;
+        Trip[i].print();
     }
 }
